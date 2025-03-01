@@ -48,3 +48,6 @@ endif
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/vendor
+
+# Virtual Machine config
+TARGET_VM_UTM_CONFIG_PLIST_TEMPLATE := $(DEVICE_PATH)/vm_configs/utm/config.plist
