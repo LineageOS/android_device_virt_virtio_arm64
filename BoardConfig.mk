@@ -4,13 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+USES_DEVICE_VIRT_VIRTIO_ARM64 := true
+
 # Boot manager
 TARGET_BOOT_MANAGER ?= grub
 
 # Inherit from common
 include device/virt/virtio-common/BoardConfigCommon.mk
-
-USES_DEVICE_VIRT_VIRTIO_ARM64 := true
 
 # Arch
 TARGET_ARCH := arm64
