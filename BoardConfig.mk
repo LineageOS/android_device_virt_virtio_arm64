@@ -35,7 +35,7 @@ TARGET_GRUB_INSTALL_EFI_PREBUILT := $(DEVICE_PATH)/bootmgr/grub/prebuilt/install
 BOARD_KERNEL_CMDLINE += \
     console=ttyAMA0
 
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
 
 # Partitions
