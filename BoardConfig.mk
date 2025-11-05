@@ -35,6 +35,9 @@ TARGET_GRUB_INSTALL_EFI_PREBUILT := $(DEVICE_PATH)/bootmgr/grub/prebuilt/install
 BOARD_KERNEL_CMDLINE += \
     console=ttyAMA0
 
+TARGET_KERNEL_CONFIG_EXT += \
+    $(DEVICE_PATH)/configs/kernel/virtio.config
+
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ARCH := arm64
 
