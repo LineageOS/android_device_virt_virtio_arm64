@@ -31,13 +31,11 @@ TARGET_GRUB_BOOT_EFI_PREBUILT := $(DEVICE_PATH)/bootmgr/grub/prebuilt/boot/BOOTA
 TARGET_GRUB_INSTALL_EFI_PREBUILT := $(DEVICE_PATH)/bootmgr/grub/prebuilt/install/BOOTAA64.EFI
 
 # Kernel
-BOARD_KERNEL_CMDLINE += \
-    console=ttyAMA0
-
 TARGET_KERNEL_CONFIG_EXT += \
     $(DEVICE_PATH)/configs/kernel/virtio.config
 
 BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_LINUX_SERIAL_DEVICE := ttyAMA0
 TARGET_KERNEL_ARCH := arm64
 
 # Partitions
