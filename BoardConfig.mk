@@ -32,7 +32,7 @@ TARGET_GRUB_INSTALL_EFI_PREBUILT := $(DEVICE_PATH)/bootmgr/grub/prebuilt/install
 
 # Kernel
 TARGET_KERNEL_CONFIG_EXT += \
-    $(DEVICE_PATH)/configs/kernel/virtio.config
+    $(DEVICE_PATH)/configs/kernel/virtio_arm64.config
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_LINUX_SERIAL_DEVICE := ttyAMA0
